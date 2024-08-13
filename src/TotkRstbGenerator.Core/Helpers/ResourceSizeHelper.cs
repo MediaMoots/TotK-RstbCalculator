@@ -49,7 +49,7 @@ public class ResourceSizeHelper
                 ".dpi" => size + 0x100,
                 ".genvb" => size + 0x180,
                 ".jpg" => size + 0x100,
-                ".mc" => (size + ModelCodecResourceCalculator.CalculateSizeOffset(data) + 1500) * 4,
+                ".mc" => size + ModelCodecResourceCalculator.CalculateSizeOffset(data) + 1500,
                 ".pack" => size + 0x180,
                 ".png" => size + 0x100,
                 ".quad" => size + 0x100,
